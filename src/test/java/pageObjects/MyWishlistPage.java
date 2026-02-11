@@ -14,7 +14,7 @@ public class MyWishlistPage extends BasePage{
 	@FindBy(xpath="(//i[@class='fa fa-heart'])[2]")
 	private WebElement addToWishlistBtn;
 	
-	@FindBy(xpath="(//i[@class='fa fa-heart'])[1]")
+	@FindBy(xpath="//a[@id='wishlist-total']")
 	private WebElement myWishlistlink;
 	
 	@FindBy(xpath="//tbody//tr//td[2]")
@@ -37,7 +37,8 @@ public class MyWishlistPage extends BasePage{
 	
 	public void addProductToWishlist()
 	{
-		wait.until(ExpectedConditions.elementToBeClickable(addToWishlistBtn)).click();;
+		wait.until(ExpectedConditions.elementToBeClickable(addToWishlistBtn));
+		addToWishlistBtn.click();
 	}
 	
 	public void navigateToMyWishlist()

@@ -27,7 +27,7 @@ public class TC011_AddedProductValidationInWishlistTest extends CommonFlows{
 		wl.addProductToWishlist();
 		wl.navigateToMyWishlist();
 		
-		Assert.assertEquals(wl.getProductNameFromWishlist(),prodName);
+		Assert.assertEquals(wl.getProductNameFromWishlist(), prodName);
 		Assert.assertEquals(wl.getProductPriceFromMyWishlist(), prodPrice);
 	}
 	
