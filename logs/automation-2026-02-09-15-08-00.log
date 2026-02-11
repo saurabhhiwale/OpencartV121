@@ -1,0 +1,50 @@
+15:56:38.180 [main] INFO  testCases.TC001_AccountRegistrationTest - * Validating Expected Message *
+15:56:38.223 [main] INFO  testCases.TC001_AccountRegistrationTest - *** Finished TC001_AccountRegistrationTest ***
+15:56:41.052 [main] INFO  testCases.TC002_LoginTest - *** Starting Tc002_LoginTest ***
+15:56:42.440 [main] INFO  testCases.TC002_LoginTest - *** Finished Tc002_LoginTest ***
+15:56:45.387 [main] INFO  testCases.TC004_SearchProductTest - ***Starting TC_004 Search-Product Test***
+15:56:50.931 [main] INFO  testCases.TC005_AddToCartTest - ***Starting TC_005 Add Product To Cart Test***
+15:58:54.805 [main] INFO  testCases.TC001_AccountRegistrationTest - *** Starting TC001_AccountRegistrationTest ***
+15:58:54.925 [main] INFO  testCases.TC001_AccountRegistrationTest - * Clicked on My Account Link *
+15:58:55.555 [main] INFO  testCases.TC001_AccountRegistrationTest - * Clicked on Register Link *
+15:58:55.557 [main] INFO  testCases.TC001_AccountRegistrationTest - * Providing Customer Details *
+15:58:56.114 [main] INFO  testCases.TC001_AccountRegistrationTest - * Validating Expected Message *
+15:58:57.157 [main] INFO  testCases.TC001_AccountRegistrationTest - *** Finished TC001_AccountRegistrationTest ***
+15:58:59.765 [main] INFO  testCases.TC002_LoginTest - *** Starting Tc002_LoginTest ***
+15:59:01.354 [main] INFO  testCases.TC002_LoginTest - *** Finished Tc002_LoginTest ***
+15:59:03.781 [main] INFO  testCases.TC004_SearchProductTest - ***Starting TC_004 Search-Product Test***
+15:59:09.559 [main] INFO  testCases.TC005_AddToCartTest - ***Starting TC_005 Add Product To Cart Test***
+16:01:54.144 [main] INFO  testCases.TC001_AccountRegistrationTest - *** Starting TC001_AccountRegistrationTest ***
+16:01:54.245 [main] INFO  testCases.TC001_AccountRegistrationTest - * Clicked on My Account Link *
+16:01:54.649 [main] INFO  testCases.TC001_AccountRegistrationTest - * Clicked on Register Link *
+16:01:54.651 [main] INFO  testCases.TC001_AccountRegistrationTest - * Providing Customer Details *
+16:01:55.267 [main] INFO  testCases.TC001_AccountRegistrationTest - * Validating Expected Message *
+16:01:56.268 [main] INFO  testCases.TC001_AccountRegistrationTest - *** Finished TC001_AccountRegistrationTest ***
+16:01:58.594 [main] INFO  testCases.TC002_LoginTest - *** Starting Tc002_LoginTest ***
+16:02:00.130 [main] INFO  testCases.TC002_LoginTest - *** Finished Tc002_LoginTest ***
+16:02:03.541 [main] INFO  testCases.TC004_SearchProductTest - ***Starting TC_004 Search-Product Test***
+16:02:09.368 [main] INFO  testCases.TC005_AddToCartTest - ***Starting TC_005 Add Product To Cart Test***
+16:06:35.057 [main] INFO  testCases.TC001_AccountRegistrationTest - *** Starting TC001_AccountRegistrationTest ***
+16:06:35.194 [main] INFO  testCases.TC001_AccountRegistrationTest - * Clicked on My Account Link *
+16:06:36.549 [main] INFO  testCases.TC001_AccountRegistrationTest - * Clicked on Register Link *
+16:06:36.551 [main] INFO  testCases.TC001_AccountRegistrationTest - * Providing Customer Details *
+16:06:38.023 [main] INFO  testCases.TC001_AccountRegistrationTest - * Validating Expected Message *
+16:06:38.048 [main] INFO  testCases.TC001_AccountRegistrationTest - *** Finished TC001_AccountRegistrationTest ***
+16:06:41.457 [main] INFO  testCases.TC002_LoginTest - *** Starting Tc002_LoginTest ***
+16:06:42.999 [main] INFO  testCases.TC002_LoginTest - *** Finished Tc002_LoginTest ***
+16:06:45.965 [main] INFO  testCases.TC004_SearchProductTest - ***Starting TC_004 Search-Product Test***
+16:06:52.514 [main] INFO  testCases.TC005_AddToCartTest - ***Starting TC_005 Add Product To Cart Test***
+15:07:01.504 [main] INFO  testCases.TC001_AccountRegistrationTest - *** Starting TC001_AccountRegistrationTest ***
+15:07:01.665 [main] INFO  testCases.TC001_AccountRegistrationTest - * Clicked on My Account Link *
+15:07:02.219 [main] INFO  testCases.TC001_AccountRegistrationTest - * Clicked on Register Link *
+15:07:02.227 [main] INFO  testCases.TC001_AccountRegistrationTest - * Providing Customer Details *
+15:07:03.776 [main] INFO  testCases.TC001_AccountRegistrationTest - * Validating Expected Message *
+15:07:03.820 [main] INFO  testCases.TC001_AccountRegistrationTest - *** Finished TC001_AccountRegistrationTest ***
+15:07:09.909 [main] INFO  testCases.TC002_LoginTest - *** Starting Tc002_LoginTest ***
+15:07:11.386 [main] INFO  testCases.TC002_LoginTest - *** Finished Tc002_LoginTest ***
+15:07:54.090 [main] INFO  testCases.TC001_AccountRegistrationTest - *** Starting TC001_AccountRegistrationTest ***
+15:07:54.307 [main] INFO  testCases.TC001_AccountRegistrationTest - * Clicked on My Account Link *
+15:07:54.777 [main] INFO  testCases.TC001_AccountRegistrationTest - * Clicked on Register Link *
+15:07:54.779 [main] INFO  testCases.TC001_AccountRegistrationTest - * Providing Customer Details *
+15:07:56.272 [main] INFO  testCases.TC001_AccountRegistrationTest - * Validating Expected Message *
+15:07:56.321 [main] INFO  testCases.TC001_AccountRegistrationTest - *** Finished TC001_AccountRegistrationTest ***

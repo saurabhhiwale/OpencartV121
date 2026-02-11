@@ -18,6 +18,7 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
@@ -28,9 +29,9 @@ public class BaseClass {
 	
 public static WebDriver driver;
 public Logger logger;
-public Properties p;
+public static Properties p;
 	
-	@BeforeClass(groups= {"Sanity","Regression","Master"})
+	@BeforeClass(groups= {"Smoke","Sanity","Regression","Master"})
 	@Parameters({"os","browser"})
 	public void setup(String os,String br) throws IOException
 	{
@@ -92,7 +93,7 @@ public Properties p;
 	}
 	
 	
-	@AfterClass(groups= {"Sanity","Regression","Master"})
+	@AfterClass(groups= {"Smoke","Sanity","Regression","Master"})
 	public void tearDown()
 	{
 		driver.quit();
