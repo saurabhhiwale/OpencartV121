@@ -8,7 +8,10 @@ import java.text.SimpleDateFormat;
 import java.time.Duration;
 import java.util.Date;
 import java.util.Properties;
+
 import org.apache.commons.lang3.RandomStringUtils;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.Platform;
 import org.openqa.selenium.TakesScreenshot;
@@ -18,12 +21,9 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
 
 public class BaseClass {
 	
@@ -37,7 +37,7 @@ public static Properties p;
 	{
 		
 		//Loading config.properties file
-		FileReader file=new FileReader("./src//test//resources//config.properties");
+		FileReader file = new FileReader(System.getProperty("user.dir") + "/src/test/resources/config.properties");
 		p=new Properties();
 		p.load(file);
 		
@@ -59,10 +59,8 @@ public static Properties p;
 			{
 				capabilities.setPlatform(Platform.MAC);
 			}
-			else
-			{
-				System.out.println("No Matching os");
-				return;
+			else {
+			    throw new RuntimeException("No Matching OS");
 			}
 			
 			switch(br.toLowerCase())
@@ -82,7 +80,8 @@ public static Properties p;
 		case "chrome" : driver=new ChromeDriver();break;
 		case "edge" : driver=new EdgeDriver();break;
 		case "firefox" : driver=new FirefoxDriver();break;
-		default:System.out.println("Invalid Browser Name..");return;
+		default:
+		    throw new RuntimeException("Invalid Browser Name");
 		}
 		}
 		
@@ -116,7 +115,7 @@ public static Properties p;
 		return (generatedString+"@"+generatedNumber);
 	}
 	
-	public String captureScreen(String tname) throws IOException {
+	public static String captureScreen(String tname) throws IOException {
 
 	    String timeStamp = new SimpleDateFormat("yyyyMMddhhmmss").format(new Date());
 	    TakesScreenshot takesScreenshot = (TakesScreenshot) driver;

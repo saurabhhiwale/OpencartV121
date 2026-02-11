@@ -3,6 +3,7 @@ package pageObjects;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 
 public class AddToCartPage extends BasePage{
 
@@ -33,6 +34,7 @@ public class AddToCartPage extends BasePage{
 	
 	public void clickOnaddtocartBtn()
 	{
+		wait.until(ExpectedConditions.elementToBeClickable(addtocartBtn));
 		addtocartBtn.click();
 	}
 	
@@ -43,22 +45,26 @@ public class AddToCartPage extends BasePage{
 	
 	public void navigateToShoppingCart()
 	{
+		wait.until(ExpectedConditions.elementToBeClickable(shoppingCart));
 		shoppingCart.click();
 	}
 	
 	public String getActProductName()
 	{
+		wait.until(ExpectedConditions.visibilityOf(actProductName));
 		return actProductName.getText();
 	}
 	
 	public String getProductNameFromCart()
 	{
+		wait.until(ExpectedConditions.visibilityOf(productNameFromCart));
 		return productNameFromCart
 				.getText()
 				.trim();
 	}
 	
 	public String getActProductPrice() {
+		wait.until(ExpectedConditions.visibilityOf(actProductPrice));
 	    return actProductPrice
 	            .getText()
 	            .split("\n")[0]
@@ -67,6 +73,7 @@ public class AddToCartPage extends BasePage{
 	
 	public String getProductPriceFromCart()
 	{
+		wait.until(ExpectedConditions.visibilityOf(productPriceFromCart));
 		return productPriceFromCart.getText();
 	}
 	

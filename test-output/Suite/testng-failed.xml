@@ -5,13 +5,15 @@
     <parameter name="os" value="Windows"/>
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="testCases.TC016_CompareProductTest">
+      <class name="testCases.TC006_UpdateCartTest">
         <methods>
-          <include name="setup"/>
-          <include name="testCompareProductfunctionality"/>
+          <include name="verifyUpdateCartFunctionality"/>
+          <include name="applicationTeardown"/>
+          <include name="tearDown"/>
+          <include name="applicationSetup"/>
           <include name="setup"/>
         </methods>
-      </class> <!-- testCases.TC016_CompareProductTest -->
+      </class> <!-- testCases.TC006_UpdateCartTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

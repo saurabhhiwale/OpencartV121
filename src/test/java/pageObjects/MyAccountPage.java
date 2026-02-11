@@ -3,6 +3,7 @@ package pageObjects;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 
 public class MyAccountPage extends BasePage
 {
@@ -31,6 +32,7 @@ public class MyAccountPage extends BasePage
 	
 	public void clickLogout()
 	{
+		wait.until(ExpectedConditions.elementToBeClickable(lnkLogout));
 		lnkLogout.click();
 	}
 	

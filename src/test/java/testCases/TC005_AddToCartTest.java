@@ -31,7 +31,9 @@ public class TC005_AddToCartTest extends BaseClass{
 		sp.searchInSubcategory();
 		sp.searchInProductDescription();
 		sp.clickOnSearchBtn();
+		System.out.println("search product clicked");
 		sp.sortByPrice();
+		System.out.println("sort product clicked");
 	}
 	
 	@Test(groups= {"Smoke","Regression"})
@@ -41,6 +43,7 @@ public class TC005_AddToCartTest extends BaseClass{
 		String actProductName=atc.getActProductName();
 		String actProductPrice=atc.getActProductPrice();
 		atc.clickOnaddtocartBtn();
+		System.out.println("product added to cart");
 		Assert.assertTrue(atc.validateSuccessMsg(),
 				"❌ Add to cart success message was NOT displayed");
 		atc.navigateToShoppingCart();

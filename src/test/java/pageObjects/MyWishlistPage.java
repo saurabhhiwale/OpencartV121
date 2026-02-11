@@ -63,11 +63,13 @@ public class MyWishlistPage extends BasePage{
 	
 	public void addToCartFromWishlist()
 	{
+		wait.until(ExpectedConditions.elementToBeClickable(wishlistAddToCartBtn));
 		wishlistAddToCartBtn.click();
 	}
 	
 	public void removeProductFromWishlist()
 	{
+		wait.until(ExpectedConditions.elementToBeClickable(removeFromMyWishlistBtn));
 		removeFromMyWishlistBtn.click();
 	}
 	

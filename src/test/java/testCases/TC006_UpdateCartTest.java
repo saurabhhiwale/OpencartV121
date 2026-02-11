@@ -21,10 +21,12 @@ public class TC006_UpdateCartTest extends CommonFlows{
 	@Test(groups= {"Sanity","Regression"})
 	public void verifyUpdateCartFunctionality()
 	{
-		CartPage cp=new CartPage(driver);
-		cp.enterProductQuantity(p.getProperty("productQuantity"));
-		cp.updateProductQuantity();
-		Assert.assertTrue(cp.validateSucessMsg());
+
+			CartPage cp=new CartPage(driver);
+			cp.enterProductQuantity(p.getProperty("productQuantity"));
+			cp.updateProductQuantity();
+			Assert.assertTrue(cp.validateSucessMsg());
+
 	}
 	
 	@AfterMethod

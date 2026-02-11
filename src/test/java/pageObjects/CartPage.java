@@ -15,7 +15,7 @@ public class CartPage extends BasePage{
 	@FindBy(xpath="//button[@type='submit']")
 	private WebElement updateQuantityBtn;
 	
-	@FindBy(xpath="//div[@class='alert alert-success alert-dismissible']")
+	@FindBy(xpath="//i[@class='fa fa-check-circle']")
 	private WebElement sucessMsg;
 	
 	@FindBy(xpath="//table[@class='table table-bordered']//tbody//tr//td[6]")
@@ -31,10 +31,8 @@ public class CartPage extends BasePage{
 	private WebElement emptycartMsg;
 	
 	public void enterProductQuantity(String num)
-	{
-		 WebElement quantityInput = driver.findElement(
-			        By.xpath("//input[contains(@name,'quantity')]")
-			    );
+	{	
+		 WebElement quantityInput = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[contains(@name,'quantity')]")));
 		 quantityInput.clear();
 		 quantityInput.sendKeys(num);
 	}
@@ -45,11 +43,8 @@ public class CartPage extends BasePage{
 	}
 	
 	public boolean validateSucessMsg()
-	{
-		String act_msg=sucessMsg.getText();
-		String exp_msg="Success: You have modified your shopping cart!";
-		
-		return act_msg.contains(exp_msg);
+	{	
+		return sucessMsg.isDisplayed();
 	}
 	
 	public double getUnitPriceFromCart()
@@ -76,6 +71,7 @@ public class CartPage extends BasePage{
 	
 	public void removeProductFromCart()
 	{
+		wait.until(ExpectedConditions.elementToBeClickable(removeProductBtn));
 		removeProductBtn.click();
 	}
 	

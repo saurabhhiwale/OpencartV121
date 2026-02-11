@@ -30,13 +30,6 @@
           <include name="setup"/>
         </methods>
       </class> <!-- testCases.TC006_UpdateCartTest -->
-      <class name="testCases.TC005_AddToCartTest">
-        <methods>
-          <include name="tearDown"/>
-          <include name="verifyAddToCartFunctionality"/>
-          <include name="setup"/>
-        </methods>
-      </class> <!-- testCases.TC005_AddToCartTest -->
       <class name="testCases.TC007_CartTotalCalculationTest">
         <methods>
           <include name="verifyCartTotalCalculations"/>

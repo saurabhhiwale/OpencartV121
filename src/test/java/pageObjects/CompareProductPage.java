@@ -3,6 +3,7 @@ package pageObjects;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 
 public class CompareProductPage extends BasePage{
 
@@ -18,6 +19,7 @@ public class CompareProductPage extends BasePage{
 	
 	public void clickOnCompareProductBtn()
 	{
+		wait.until(ExpectedConditions.elementToBeClickable(compareProductBtn));
 		compareProductBtn.click();
 	}
 	
