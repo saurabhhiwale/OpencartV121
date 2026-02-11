@@ -2,14 +2,14 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Master Suite">
 
- 	<groups>
+<!-- 	<groups>
 		<run>
 			<include name="Smoke"/>
 			<include name="Sanity"/>
 			<include name="Regression"/>
 			<include name="Master"/>
 		</run>
-	</groups>  
+	</groups>  -->
 
 	<listeners>
 		<listener class-name="utilities.ExtentReportManager"/>

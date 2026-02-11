@@ -7,71 +7,16 @@
   <test thread-count="5" name="Test(failed)">
     <parameter name="os" value="Windows"/>
     <parameter name="browser" value="Chrome"/>
-    <groups>
-      <run>
-        <include name="Smoke"/>
-        <include name="Sanity"/>
-        <include name="Regression"/>
-        <include name="Master"/>
-      </run>
-    </groups>
     <classes>
-      <class name="testCases.TC015_LogoutTest">
-        <methods>
-          <include name="tearDown"/>
-          <include name="testLogoutFunctionality"/>
-          <include name="setup"/>
-        </methods>
-      </class> <!-- testCases.TC015_LogoutTest -->
-      <class name="testCases.TC006_UpdateCartTest">
-        <methods>
-          <include name="verifyUpdateCartFunctionality"/>
-          <include name="tearDown"/>
-          <include name="setup"/>
-        </methods>
-      </class> <!-- testCases.TC006_UpdateCartTest -->
       <class name="testCases.TC007_CartTotalCalculationTest">
         <methods>
           <include name="verifyCartTotalCalculations"/>
+          <include name="applicationLogin"/>
           <include name="tearDown"/>
           <include name="setup"/>
+          <include name="applicationTesrdown"/>
         </methods>
       </class> <!-- testCases.TC007_CartTotalCalculationTest -->
-      <class name="testCases.TC013_RemoveProductFromMyWishlist">
-        <methods>
-          <include name="validateRemoveProductFromWishlistFunctionality"/>
-          <include name="tearDown"/>
-          <include name="setup"/>
-        </methods>
-      </class> <!-- testCases.TC013_RemoveProductFromMyWishlist -->
-      <class name="testCases.TC012_AddProductFromWishlistToCartTest">
-        <methods>
-          <include name="tearDown"/>
-          <include name="setup"/>
-          <include name="testAddProductToCartFromWishlistFunctionality"/>
-        </methods>
-      </class> <!-- testCases.TC012_AddProductFromWishlistToCartTest -->
-      <class name="testCases.TC008_RemoveProductFromcartTest">
-        <methods>
-          <include name="tearDown"/>
-          <include name="setup"/>
-          <include name="verifyRemoveProductFromCartFunctionality"/>
-        </methods>
-      </class> <!-- testCases.TC008_RemoveProductFromcartTest -->
-      <class name="testCases.TC011_AddedProductValidationInWishlistTest">
-        <methods>
-          <include name="tearDown"/>
-          <include name="validateAddedProductInWishlist"/>
-          <include name="setup"/>
-        </methods>
-      </class> <!-- testCases.TC011_AddedProductValidationInWishlistTest -->
-      <class name="testCases.TC014_EmptyWishlistTest">
-        <methods>
-          <include name="tearDown"/>
-          <include name="setup"/>
-          <include name="testEmptyCartFunctionality"/>
-        </methods>
-      </class> <!-- testCases.TC014_EmptyWishlistTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Master Suite] -->
