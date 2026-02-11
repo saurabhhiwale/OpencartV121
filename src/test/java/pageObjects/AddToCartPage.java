@@ -76,7 +76,4 @@ public class AddToCartPage extends BasePage{
 		wait.until(ExpectedConditions.visibilityOf(productPriceFromCart));
 		return productPriceFromCart.getText();
 	}
-	
-	
-
 }

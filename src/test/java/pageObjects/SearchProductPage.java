@@ -3,6 +3,7 @@ package pageObjects;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 
 public class SearchProductPage extends BasePage{
@@ -37,33 +38,40 @@ public class SearchProductPage extends BasePage{
 	
 	public void searchProduct(String product)
 	{
+		wait.until(ExpectedConditions.visibilityOf(searchBox));
 		searchBox.sendKeys(product);
+		wait.until(ExpectedConditions.elementToBeClickable(searchIcon));
 		searchIcon.click();
 	}
 	
 	public void selectCategory()
 	{
+		wait.until(ExpectedConditions.visibilityOf(categoriesDropdown));
 		Select select=new Select(categoriesDropdown);
 		select.selectByVisibleText("Phones & PDAs");
 	}
 	
 	public void searchInSubcategory()
 	{
+		wait.until(ExpectedConditions.elementToBeClickable(subCategory));
 		subCategory.click();
 	}
 	
 	public void searchInProductDescription()
 	{
+		wait.until(ExpectedConditions.elementToBeClickable(productDescription));
 		productDescription.click();
 	}
 	
 	public void clickOnSearchBtn()
 	{
+		wait.until(ExpectedConditions.elementToBeClickable(searchBtn));
 		searchBtn.click();
 	}
 	
 	public void sortByPrice()
 	{
+		wait.until(ExpectedConditions.visibilityOf(sortByDropDown));
 		Select select=new Select(sortByDropDown);
 		select.selectByContainsVisibleText("Price (Low > High)");
 	}

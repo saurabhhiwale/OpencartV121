@@ -8,33 +8,15 @@
     <parameter name="os" value="Windows"/>
     <parameter name="browser" value="Chrome"/>
     <classes>
-      <class name="testCases.TC014_EmptyWishlistTest">
+      <class name="testCases.TC005_AddToCartTest">
         <methods>
           <include name="tearDown"/>
-          <include name="setUp"/>
+          <include name="verifyAddToCartFunctionality"/>
           <include name="setup"/>
-          <include name="testEmptyCartFunctionality"/>
-          <include name="teardown"/>
+          <include name="applicationLogout"/>
+          <include name="applicationSetUp"/>
         </methods>
-      </class> <!-- testCases.TC014_EmptyWishlistTest -->
-      <class name="testCases.TC006_UpdateCartTest">
-        <methods>
-          <include name="verifyUpdateCartFunctionality"/>
-          <include name="applicationTeardown"/>
-          <include name="tearDown"/>
-          <include name="applicationSetup"/>
-          <include name="setup"/>
-        </methods>
-      </class> <!-- testCases.TC006_UpdateCartTest -->
-      <class name="testCases.TC011_AddedProductValidationInWishlistTest">
-        <methods>
-          <include name="tearDown"/>
-          <include name="validateAddedProductInWishlist"/>
-          <include name="setup"/>
-          <include name="teardown"/>
-          <include name="setup"/>
-        </methods>
-      </class> <!-- testCases.TC011_AddedProductValidationInWishlistTest -->
+      </class> <!-- testCases.TC005_AddToCartTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Master Suite] -->

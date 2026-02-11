@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">15 methods, 2 failed,  1 skipped,  12 passed</span>
+                    <span class="method-stats">15 methods, 1 failed,   14 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -103,29 +103,10 @@
                     <div class="method-list-content failed suite-Master_Suite">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Master_Suite" title="testCases.TC014_EmptyWishlistTest" class="method navigator-link" hash-for-method="testEmptyCartFunctionality">testEmptyCartFunctionality</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Master_Suite" title="testCases.TC011_AddedProductValidationInWishlistTest" class="method navigator-link" hash-for-method="validateAddedProductInWishlist">validateAddedProductInWishlist</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Master_Suite" title="testCases.TC005_AddToCartTest" class="method navigator-link" hash-for-method="verifyAddToCartFunctionality">verifyAddToCartFunctionality</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Master_Suite -->
-                  </li>
-                  <li>
-                    <span class="method-list-title skipped">Skipped methods</span>
-                    <span class="show-or-hide-methods skipped">
-                      <a href="#" panel-name="suite-Master_Suite" class="hide-methods skipped suite-Master_Suite"> (hide)</a> <!-- hide-methods skipped suite-Master_Suite -->
-                      <a href="#" panel-name="suite-Master_Suite" class="show-methods skipped suite-Master_Suite"> (show)</a> <!-- show-methods skipped suite-Master_Suite -->
-                    </span>
-                    <div class="method-list-content skipped suite-Master_Suite">
-                      <span>
-                        <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-Master_Suite" title="testCases.TC006_UpdateCartTest" class="method navigator-link" hash-for-method="verifyUpdateCartFunctionality">verifyUpdateCartFunctionality</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content skipped suite-Master_Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -146,7 +127,17 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Master_Suite" title="testCases.TC014_EmptyWishlistTest" class="method navigator-link" hash-for-method="testEmptyCartFunctionality">testEmptyCartFunctionality</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Master_Suite" title="testCases.TC015_LogoutTest" class="method navigator-link" hash-for-method="testLogoutFunctionality">testLogoutFunctionality</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Master_Suite" title="testCases.TC011_AddedProductValidationInWishlistTest" class="method navigator-link" hash-for-method="validateAddedProductInWishlist">validateAddedProductInWishlist</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -157,11 +148,6 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Master_Suite" title="testCases.TC010_AddProductToWishlistTest" class="method navigator-link" hash-for-method="verifyAddProductToWishlistFunctionality">verifyAddProductToWishlistFunctionality</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Master_Suite" title="testCases.TC005_AddToCartTest" class="method navigator-link" hash-for-method="verifyAddToCartFunctionality">verifyAddToCartFunctionality</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -182,6 +168,11 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Master_Suite" title="testCases.TC004_SearchProductTest" class="method navigator-link" hash-for-method="verifySearchProductFunctionality">verifySearchProductFunctionality</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Master_Suite" title="testCases.TC006_UpdateCartTest" class="method navigator-link" hash-for-method="verifyUpdateCartFunctionality">verifyUpdateCartFunctionality</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -209,24 +200,29 @@
           <div class="suite-Master_Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">testCases.TC014_EmptyWishlistTest</span>
+              <span class="class-name">testCases.TC005_AddToCartTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="testEmptyCartFunctionality">
-                  </a> <!-- testEmptyCartFunctionality -->
-                  <span class="method-name">testEmptyCartFunctionality</span>
-                  <div class="stack-trace">org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
+                  <a name="verifyAddToCartFunctionality">
+                  </a> <!-- verifyAddToCartFunctionality -->
+                  <span class="method-name">verifyAddToCartFunctionality</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.xpath: (//table[@class=&apos;table table-bordered&apos;]//tbody//tr//td[2])[5]&apos; (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at pageObjects.AddToCartPage.getProductNameFromCart(AddToCartPage.java:60)
+	at testCases.TC005_AddToCartTest.verifyAddToCartFunctionality(TC005_AddToCartTest.java:51)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;(//table[@class=&apos;table table-bordered&apos;]//tbody//tr//td[2])[5]&quot;}
   (Session info: chrome=144.0.7559.133)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#staleelementreferenceexception
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
 Build info: version: &apos;4.38.0&apos;, revision: &apos;6b412e825c*&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.7&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [3b26489675d6399e90d430a8713721ab, isElementDisplayed {id=f.7857FB1606B14FE3B7DB29AFE42F9303.d.06632217B4FDC580267DED2A44380F2F.e.76}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.133, chrome: {chromedriverVersion: 144.0.7559.133 (7da823b1d59..., userDataDir: C:\Users\saura\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63340}, goog:processID: 16804, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63340/devtoo..., se:cdpVersion: 144.0.7559.133, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (3b26489675d6399e90d430a8713721ab)] -&gt; xpath: //a[@id=&apos;wishlist-total&apos;]]
-Session ID: 3b26489675d6399e90d430a8713721ab
+Command: [2a407dd65e2fcb615e2e62849285a174, findElement {using=xpath, value=(//table[@class=&apos;table table-bordered&apos;]//tbody//tr//td[2])[5]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.133, chrome: {chromedriverVersion: 144.0.7559.133 (7da823b1d59..., userDataDir: C:\Users\saura\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51669}, goog:processID: 27740, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51669/devtoo..., se:cdpVersion: 144.0.7559.133, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2a407dd65e2fcb615e2e62849285a174
 	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
@@ -234,107 +230,24 @@ Session ID: 3b26489675d6399e90d430a8713721ab
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-	at org.openqa.selenium.remote.RemoteWebElement.isDisplayed(RemoteWebElement.java:282)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:380)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:374)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
 	at jdk.proxy2/jdk.proxy2.$Proxy33.isDisplayed(Unknown Source)
 	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:308)
 	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:294)
 	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:291)
-	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:662)
-	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:658)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
-	at pageObjects.MyWishlistPage.navigateToMyWishlist(MyWishlistPage.java:46)
-	at testCases.TC014_EmptyWishlistTest.testEmptyCartFunctionality(TC014_EmptyWishlistTest.java:23)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 30 stack frames
+	... 28 more
+... Removed 28 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Master_Suite-class-failed -->
-          <div class="suite-Master_Suite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">testCases.TC011_AddedProductValidationInWishlistTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="validateAddedProductInWishlist">
-                  </a> <!-- validateAddedProductInWishlist -->
-                  <span class="method-name">validateAddedProductInWishlist</span>
-                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;a href=&quot;https://tutorialsninja.com/demo/index.php?route=account/wishlist&quot; id=&quot;wishlist-total&quot; title=&quot;Wish List (1)&quot;&gt;...&lt;/a&gt; is not clickable at point (959, 8). Other element would receive the click: &lt;div id=&quot;top-links&quot; class=&quot;nav pull-right&quot;&gt;...&lt;/div&gt;
-  (Session info: chrome=144.0.7559.133)
-Build info: version: &apos;4.38.0&apos;, revision: &apos;6b412e825c*&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.7&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [2e2083d6aa3fb37ee9ac067a97f3db4c, clickElement {id=f.EEA3D7CE4630F21048AE880C29AB1B13.d.B8A9B22F93D598C6CE48140ED74DC1D5.e.130}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.133, chrome: {chromedriverVersion: 144.0.7559.133 (7da823b1d59..., userDataDir: C:\Users\saura\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59083}, goog:processID: 25436, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59083/devtoo..., se:cdpVersion: 144.0.7559.133, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (2e2083d6aa3fb37ee9ac067a97f3db4c)] -&gt; xpath: //a[@id=&apos;wishlist-total&apos;]]
-Session ID: 2e2083d6aa3fb37ee9ac067a97f3db4c
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at jdk.proxy2/jdk.proxy2.$Proxy33.click(Unknown Source)
-	at pageObjects.MyWishlistPage.navigateToMyWishlist(MyWishlistPage.java:47)
-	at testCases.TC011_AddedProductValidationInWishlistTest.validateAddedProductInWishlist(TC011_AddedProductValidationInWishlistTest.java:28)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 30 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Master_Suite-class-failed -->
-          <div class="suite-Master_Suite-class-skipped">
-            <div class="main-panel-header rounded-window-top">
-              <img src="skipped.png"/>
-              <span class="class-name">testCases.TC006_UpdateCartTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyUpdateCartFunctionality">
-                  </a> <!-- verifyUpdateCartFunctionality -->
-                  <span class="method-name">verifyUpdateCartFunctionality</span>
-                  <div class="stack-trace">org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
-  (Session info: chrome=144.0.7559.133)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#staleelementreferenceexception
-Build info: version: &apos;4.38.0&apos;, revision: &apos;6b412e825c*&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.7&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [b3c29277234c4758e9e78d955cf468b9, sendKeysToElement {value=[Ljava.lang.CharSequence;@6436e181, id=f.3EFF1CBE502A50A37A23D5DA6DE7F3F7.d.7CA2760482D179FF1FC9EF023DECC93D.e.64}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.133, chrome: {chromedriverVersion: 144.0.7559.133 (7da823b1d59..., userDataDir: C:\Users\saura\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58533}, goog:processID: 18204, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58533/devtoo..., se:cdpVersion: 144.0.7559.133, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (b3c29277234c4758e9e78d955cf468b9)] -&gt; xpath: //input[@placeholder=&apos;Search&apos;]]
-Session ID: b3c29277234c4758e9e78d955cf468b9
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:110)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at jdk.proxy2/jdk.proxy2.$Proxy33.sendKeys(Unknown Source)
-	at pageObjects.SearchProductPage.searchProduct(SearchProductPage.java:40)
-	at utilities.CommonFlows.searchProduct(CommonFlows.java:27)
-	at testCases.TC006_UpdateCartTest.applicationSetup(TC006_UpdateCartTest.java:17)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 34 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Master_Suite-class-skipped -->
           <div class="suite-Master_Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -368,14 +281,14 @@ Session ID: b3c29277234c4758e9e78d955cf468b9
           <div class="suite-Master_Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">testCases.TC007_CartTotalCalculationTest</span>
+              <span class="class-name">testCases.TC014_EmptyWishlistTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="verifyCartTotalCalculations">
-                  </a> <!-- verifyCartTotalCalculations -->
-                  <span class="method-name">verifyCartTotalCalculations</span>
+                  <a name="testEmptyCartFunctionality">
+                  </a> <!-- testEmptyCartFunctionality -->
+                  <span class="method-name">testEmptyCartFunctionality</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -398,36 +311,6 @@ Session ID: b3c29277234c4758e9e78d955cf468b9
           <div class="suite-Master_Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">testCases.TC012_AddProductFromWishlistToCartTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="testAddProductToCartFromWishlistFunctionality">
-                  </a> <!-- testAddProductToCartFromWishlistFunctionality -->
-                  <span class="method-name">testAddProductToCartFromWishlistFunctionality</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Master_Suite-class-passed -->
-          <div class="suite-Master_Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">testCases.TC005_AddToCartTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyAddToCartFunctionality">
-                  </a> <!-- verifyAddToCartFunctionality -->
-                  <span class="method-name">verifyAddToCartFunctionality</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Master_Suite-class-passed -->
-          <div class="suite-Master_Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
               <span class="class-name">testCases.TC002_LoginTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -436,6 +319,21 @@ Session ID: b3c29277234c4758e9e78d955cf468b9
                   <a name="verify_login">
                   </a> <!-- verify_login -->
                   <span class="method-name">verify_login</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Master_Suite-class-passed -->
+          <div class="suite-Master_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testCases.TC011_AddedProductValidationInWishlistTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateAddedProductInWishlist">
+                  </a> <!-- validateAddedProductInWishlist -->
+                  <span class="method-name">validateAddedProductInWishlist</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -458,21 +356,6 @@ Session ID: b3c29277234c4758e9e78d955cf468b9
           <div class="suite-Master_Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">testCases.TC009_EmptyCartTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyEmptyCartyFunctionality">
-                  </a> <!-- verifyEmptyCartyFunctionality -->
-                  <span class="method-name">verifyEmptyCartyFunctionality</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Master_Suite-class-passed -->
-          <div class="suite-Master_Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
               <span class="class-name">testCases.TC013_RemoveProductFromMyWishlist</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -488,21 +371,6 @@ Session ID: b3c29277234c4758e9e78d955cf468b9
           <div class="suite-Master_Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">testCases.TC004_SearchProductTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifySearchProductFunctionality">
-                  </a> <!-- verifySearchProductFunctionality -->
-                  <span class="method-name">verifySearchProductFunctionality</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Master_Suite-class-passed -->
-          <div class="suite-Master_Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
               <span class="class-name">testCases.TC010_AddProductToWishlistTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -511,6 +379,81 @@ Session ID: b3c29277234c4758e9e78d955cf468b9
                   <a name="verifyAddProductToWishlistFunctionality">
                   </a> <!-- verifyAddProductToWishlistFunctionality -->
                   <span class="method-name">verifyAddProductToWishlistFunctionality</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Master_Suite-class-passed -->
+          <div class="suite-Master_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testCases.TC006_UpdateCartTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyUpdateCartFunctionality">
+                  </a> <!-- verifyUpdateCartFunctionality -->
+                  <span class="method-name">verifyUpdateCartFunctionality</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Master_Suite-class-passed -->
+          <div class="suite-Master_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testCases.TC007_CartTotalCalculationTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyCartTotalCalculations">
+                  </a> <!-- verifyCartTotalCalculations -->
+                  <span class="method-name">verifyCartTotalCalculations</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Master_Suite-class-passed -->
+          <div class="suite-Master_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testCases.TC012_AddProductFromWishlistToCartTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testAddProductToCartFromWishlistFunctionality">
+                  </a> <!-- testAddProductToCartFromWishlistFunctionality -->
+                  <span class="method-name">testAddProductToCartFromWishlistFunctionality</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Master_Suite-class-passed -->
+          <div class="suite-Master_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testCases.TC009_EmptyCartTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyEmptyCartyFunctionality">
+                  </a> <!-- verifyEmptyCartyFunctionality -->
+                  <span class="method-name">verifyEmptyCartyFunctionality</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Master_Suite-class-passed -->
+          <div class="suite-Master_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testCases.TC004_SearchProductTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifySearchProductFunctionality">
+                  </a> <!-- verifySearchProductFunctionality -->
+                  <span class="method-name">verifySearchProductFunctionality</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -716,70 +659,70 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(15);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'verifyRemoveProductFromCartFunctionality')
-data.setCell(0, 2, 'testCases.TC008_RemoveProductFromcartTest')
-data.setCell(0, 3, 10616);
+data.setCell(0, 1, 'verifyAddToCartFunctionality')
+data.setCell(0, 2, 'testCases.TC005_AddToCartTest')
+data.setCell(0, 3, 22881);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'verify_account_registration')
-data.setCell(1, 2, 'testCases.TC001_AccountRegistrationTest')
-data.setCell(1, 3, 3240);
+data.setCell(1, 1, 'verifyRemoveProductFromCartFunctionality')
+data.setCell(1, 2, 'testCases.TC008_RemoveProductFromcartTest')
+data.setCell(1, 3, 10673);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'verifyAddToCartFunctionality')
-data.setCell(2, 2, 'testCases.TC005_AddToCartTest')
-data.setCell(2, 3, 2993);
+data.setCell(2, 1, 'verify_account_registration')
+data.setCell(2, 2, 'testCases.TC001_AccountRegistrationTest')
+data.setCell(2, 3, 3682);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'verifySearchProductFunctionality')
 data.setCell(3, 2, 'testCases.TC004_SearchProductTest')
-data.setCell(3, 3, 2643);
+data.setCell(3, 3, 3222);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'verify_login')
 data.setCell(4, 2, 'testCases.TC002_LoginTest')
-data.setCell(4, 3, 2309);
+data.setCell(4, 3, 2192);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'validateAddedProductInWishlist')
-data.setCell(5, 2, 'testCases.TC011_AddedProductValidationInWishlistTest')
-data.setCell(5, 3, 1952);
+data.setCell(5, 1, 'validateRemoveProductFromWishlistFunctionality')
+data.setCell(5, 2, 'testCases.TC013_RemoveProductFromMyWishlist')
+data.setCell(5, 3, 1725);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'testLogoutFunctionality')
-data.setCell(6, 2, 'testCases.TC015_LogoutTest')
-data.setCell(6, 3, 1329);
+data.setCell(6, 1, 'validateAddedProductInWishlist')
+data.setCell(6, 2, 'testCases.TC011_AddedProductValidationInWishlistTest')
+data.setCell(6, 3, 1529);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'testAddProductToCartFromWishlistFunctionality')
-data.setCell(7, 2, 'testCases.TC012_AddProductFromWishlistToCartTest')
-data.setCell(7, 3, 918);
+data.setCell(7, 1, 'testLogoutFunctionality')
+data.setCell(7, 2, 'testCases.TC015_LogoutTest')
+data.setCell(7, 3, 1486);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'validateRemoveProductFromWishlistFunctionality')
-data.setCell(8, 2, 'testCases.TC013_RemoveProductFromMyWishlist')
-data.setCell(8, 3, 917);
+data.setCell(8, 1, 'testAddProductToCartFromWishlistFunctionality')
+data.setCell(8, 2, 'testCases.TC012_AddProductFromWishlistToCartTest')
+data.setCell(8, 3, 1415);
 data.setCell(9, 0, 9)
-data.setCell(9, 1, 'verifyCartTotalCalculations')
-data.setCell(9, 2, 'testCases.TC007_CartTotalCalculationTest')
-data.setCell(9, 3, 726);
+data.setCell(9, 1, 'verifyEmptyCartyFunctionality')
+data.setCell(9, 2, 'testCases.TC009_EmptyCartTest')
+data.setCell(9, 3, 1208);
 data.setCell(10, 0, 10)
-data.setCell(10, 1, 'testEmptyCartFunctionality')
-data.setCell(10, 2, 'testCases.TC014_EmptyWishlistTest')
-data.setCell(10, 3, 696);
+data.setCell(10, 1, 'verifyCartTotalCalculations')
+data.setCell(10, 2, 'testCases.TC007_CartTotalCalculationTest')
+data.setCell(10, 3, 932);
 data.setCell(11, 0, 11)
-data.setCell(11, 1, 'verifyEmptyCartyFunctionality')
-data.setCell(11, 2, 'testCases.TC009_EmptyCartTest')
-data.setCell(11, 3, 381);
+data.setCell(11, 1, 'verifyUpdateCartFunctionality')
+data.setCell(11, 2, 'testCases.TC006_UpdateCartTest')
+data.setCell(11, 3, 775);
 data.setCell(12, 0, 12)
-data.setCell(12, 1, 'verifyAddProductToWishlistFunctionality')
-data.setCell(12, 2, 'testCases.TC010_AddProductToWishlistTest')
-data.setCell(12, 3, 333);
+data.setCell(12, 1, 'testEmptyCartFunctionality')
+data.setCell(12, 2, 'testCases.TC014_EmptyWishlistTest')
+data.setCell(12, 3, 649);
 data.setCell(13, 0, 13)
-data.setCell(13, 1, 'testCompareProductfunctionality')
-data.setCell(13, 2, 'testCases.TC016_CompareProductTest')
-data.setCell(13, 3, 288);
+data.setCell(13, 1, 'verifyAddProductToWishlistFunctionality')
+data.setCell(13, 2, 'testCases.TC010_AddProductToWishlistTest')
+data.setCell(13, 3, 431);
 data.setCell(14, 0, 14)
-data.setCell(14, 1, 'verifyUpdateCartFunctionality')
-data.setCell(14, 2, 'testCases.TC006_UpdateCartTest')
-data.setCell(14, 3, 1);
+data.setCell(14, 1, 'testCompareProductfunctionality')
+data.setCell(14, 2, 'testCases.TC016_CompareProductTest')
+data.setCell(14, 3, 337);
 window.suiteTableData['Master_Suite']= { tableData: data, tableDiv: 'times-div-Master_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 29 seconds</span>
+              <span class="suite-total-time">Total running time: 53 seconds</span>
               <div id="times-div-Master_Suite">
               </div> <!-- times-div-Master_Suite -->
             </div> <!-- times-div -->
@@ -812,309 +755,317 @@ return data;
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">verify_account_registration</span>
-                <span class="method-start">3382 ms</span>
+                <span class="method-start">5272 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">6653 ms</span>
+                <span class="method-start">9015 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testCases.TC002_LoginTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setup(Windows, Chrome)</span>
-                <span class="method-start">7256 ms</span>
+                <span class="method-start">9874 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">verify_login</span>
-                <span class="method-start">9487 ms</span>
+                <span class="method-start">12262 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">11800 ms</span>
+                <span class="method-start">14465 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testCases.TC004_SearchProductTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setup(Windows, Chrome)</span>
-                <span class="method-start">12483 ms</span>
+                <span class="method-start">15186 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">applicationlogin</span>
-                <span class="method-start">14687 ms</span>
+                <span class="method-start">18204 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifySearchProductFunctionality</span>
-                <span class="method-start">15862 ms</span>
+                <span class="method-start">19576 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">applicationLogout</span>
-                <span class="method-start">18507 ms</span>
+                <span class="method-start">22809 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">19176 ms</span>
+                <span class="method-start">23530 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testCases.TC005_AddToCartTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setup(Windows, Chrome)</span>
-                <span class="method-start">19978 ms</span>
+                <span class="method-start">24192 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">applicationSetUp</span>
-                <span class="method-start">22258 ms</span>
+                <span class="method-start">26884 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">verifyAddToCartFunctionality</span>
-                <span class="method-start">26197 ms</span>
+                <span class="method-start">31270 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">applicationLogout</span>
-                <span class="method-start">29202 ms</span>
+                <span class="method-start">54333 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">29712 ms</span>
+                <span class="method-start">55020 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testCases.TC006_UpdateCartTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setup(Windows, Chrome)</span>
-                <span class="method-start">30540 ms</span>
+                <span class="method-start">55832 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">applicationSetup</span>
-                <span class="method-start">32755 ms</span>
+                <span class="method-start">60121 ms</span>
               </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyUpdateCartFunctionality</span>
+                <span class="method-start">65840 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">applicationTeardown</span>
+                <span class="method-start">66615 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">67244 ms</span>
+              </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testCases.TC007_CartTotalCalculationTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setup(Windows, Chrome)</span>
-                <span class="method-start">35031 ms</span>
+                <span class="method-start">67883 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">applicationLogin</span>
-                <span class="method-start">37923 ms</span>
+                <span class="method-start">70250 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyCartTotalCalculations</span>
-                <span class="method-start">42167 ms</span>
+                <span class="method-start">75698 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">applicationTesrdown</span>
-                <span class="method-start">42897 ms</span>
+                <span class="method-start">76636 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">43525 ms</span>
+                <span class="method-start">77225 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testCases.TC008_RemoveProductFromcartTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setup(Windows, Chrome)</span>
-                <span class="method-start">44239 ms</span>
+                <span class="method-start">77907 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">48339 ms</span>
+                <span class="method-start">80185 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyRemoveProductFromCartFunctionality</span>
-                <span class="method-start">53058 ms</span>
+                <span class="method-start">85242 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">63683 ms</span>
+                <span class="method-start">95923 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">64305 ms</span>
+                <span class="method-start">97191 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testCases.TC009_EmptyCartTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setup(Windows, Chrome)</span>
-                <span class="method-start">65083 ms</span>
+                <span class="method-start">97991 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">67106 ms</span>
+                <span class="method-start">100842 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyEmptyCartyFunctionality</span>
-                <span class="method-start">69148 ms</span>
+                <span class="method-start">102406 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">69529 ms</span>
+                <span class="method-start">103620 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">70173 ms</span>
+                <span class="method-start">104274 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testCases.TC010_AddProductToWishlistTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setup(Windows, Chrome)</span>
-                <span class="method-start">70810 ms</span>
+                <span class="method-start">104972 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">72876 ms</span>
+                <span class="method-start">107322 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyAddProductToWishlistFunctionality</span>
-                <span class="method-start">76748 ms</span>
+                <span class="method-start">111846 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">teardown</span>
-                <span class="method-start">77081 ms</span>
+                <span class="method-start">112284 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testCases.TC011_AddedProductValidationInWishlistTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setup(Windows, Chrome)</span>
-                <span class="method-start">78213 ms</span>
+                <span class="method-start">122761 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">80363 ms</span>
+                <span class="method-start">126716 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">validateAddedProductInWishlist</span>
-                <span class="method-start">84511 ms</span>
+                <span class="method-start">131634 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">86612 ms</span>
+                <span class="method-start">133164 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">87563 ms</span>
+                <span class="method-start">133857 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testCases.TC012_AddProductFromWishlistToCartTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setup(Windows, Chrome)</span>
-                <span class="method-start">88310 ms</span>
+                <span class="method-start">134744 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">90371 ms</span>
+                <span class="method-start">138743 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testAddProductToCartFromWishlistFunctionality</span>
-                <span class="method-start">94248 ms</span>
+                <span class="method-start">142882 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">95168 ms</span>
+                <span class="method-start">144299 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">95752 ms</span>
+                <span class="method-start">144946 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testCases.TC013_RemoveProductFromMyWishlist</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setup(Windows, Chrome)</span>
-                <span class="method-start">96845 ms</span>
+                <span class="method-start">145757 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">98955 ms</span>
+                <span class="method-start">148518 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">validateRemoveProductFromWishlistFunctionality</span>
-                <span class="method-start">102433 ms</span>
+                <span class="method-start">153106 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">103352 ms</span>
+                <span class="method-start">154831 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">103922 ms</span>
+                <span class="method-start">155514 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testCases.TC014_EmptyWishlistTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setup(Windows, Chrome)</span>
-                <span class="method-start">104615 ms</span>
+                <span class="method-start">156257 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">106687 ms</span>
+                <span class="method-start">159210 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">testEmptyCartFunctionality</span>
-                <span class="method-start">107732 ms</span>
+                <span class="method-start">161264 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">108566 ms</span>
+                <span class="method-start">161913 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">109111 ms</span>
+                <span class="method-start">162558 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testCases.TC015_LogoutTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setup(Windows, Chrome)</span>
-                <span class="method-start">109766 ms</span>
+                <span class="method-start">163278 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">111971 ms</span>
+                <span class="method-start">166087 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testLogoutFunctionality</span>
-                <span class="method-start">112959 ms</span>
+                <span class="method-start">167323 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">114295 ms</span>
+                <span class="method-start">168812 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testCases.TC016_CompareProductTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setup(Windows, Chrome)</span>
-                <span class="method-start">115350 ms</span>
+                <span class="method-start">169624 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">117885 ms</span>
+                <span class="method-start">172525 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testCompareProductfunctionality</span>
-                <span class="method-start">121224 ms</span>
+                <span class="method-start">177002 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">121515 ms</span>
+                <span class="method-start">177341 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
